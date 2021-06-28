@@ -28,6 +28,27 @@
 
         var newNumber2 = numbers.filter( number => number <= 0 );
         console.log(newNumber2);
+
+        var newNumber3 = numbers.filter( number => number%2 == 0 );
+        console.log(newNumber3);
+
+        var snacks = ['허쉬초콜릿', '가나초콜릿', '홈런볼', '하리보', '콘칩', 'abc초콜릿'];
+        function userLength(){
+            for(var i = 0; i<snacks.length; i++){
+                if(snacks[i].length <= 3){
+                    console.log(snacks[i]);
+                }
+            }
+        }
+        userLength();
+
+        var result1 = snacks.filter(snack => snack.length > 3);
+        console.log( result1 ); // 배열로 리턴
+
+        var result2 = snacks.filter(snack => snack.indexOf('초콜릿') > -1);
+        console.log( result2 );
+
+        // 함수로 변경 (indexOf)
     </script>
 </body>
 </html>
