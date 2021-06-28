@@ -49,6 +49,21 @@
         console.log( result2 );
 
         // 함수로 변경 (indexOf)
+        console.log( "한글은아름다운글입니다.".indexOf("깡") );
+        // 0부터 시작, 찾는 문자열이 없으면 -1
+        var email = "ur_ru@naver.com"
+        console.log(email.indexOf('@'));
+
+        var newAry = [];
+        function userSearch(){
+            for(var i = 0; i < snacks.length; i++){
+                if(snacks[i].indexOf('초콜릿') > -1){
+                    newAry.push( snacks[i] );
+                }
+            }
+        }
+        userSearch();
+        console.log( newAry );
     </script>
 </body>
 </html>
