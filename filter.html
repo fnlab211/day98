@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var numbers = [4, 34, 6, -43, 23, 76, 12, -75, 32, 88];
+        var newNumber1 = [];
+        function userFilter(){
+            for(var i = 0, n = 0; i<numbers.length; i++){
+                // if(numbers[i] <= 0){
+                //     newNumber1[n] = numbers[i];
+                //     n++;
+                // }
+                if(numbers[i] >= 30){
+                    newNumber1[n] = numbers[i];
+                    n++;
+                }
+            }
+        }
+        userFilter();
+        console.log(newNumber1);
+
+
+        var newNumber2 = numbers.filter( number => number <= 0 );
+        console.log(newNumber2);
+    </script>
+</body>
+</html>
