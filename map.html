@@ -23,6 +23,13 @@
         })
         console.log( newNumber1.toString() );
         console.log( newNumber1 );
+
+        function addNum(number){
+            return number*2;
+        }
+        var newNumber3 = numbers.map(addNum);
+        // 파라미터를 생략해도 map 메서드가 알아서 배열을 파라미터로 전달
+        console.log(newNumber3);
     </script>
 </body>
 </html>
